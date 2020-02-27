@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'eltiempobcn'
+ElTiempoCLI.start(ARGV)
+# ElTiempoBcn::get_bcn

@@ -5,8 +5,6 @@ require 'i18n'
 require 'byebug'
 require_relative 'place.rb'
 
-# gem uninstall -x eltiempobcn;  gem build eltiempobcn.gemspec; gem install eltiempobcn
-# load './lib/eltiempobcn.rb'; ElTiempoCLI.start( ['today', 'Barcelona'] )
 class ElTiempoCLI < Thor
   @@places, @@places_names = Place.get_places_list
 

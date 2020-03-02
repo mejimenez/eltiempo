@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "It's a simple gem to get the ability to get the weather for different regions in Catalonia using CLI"
   s.authors   = ['Marcelo Jimenez']
   s.email     = ['mejimenez@gmail.com']
-  s.homepage  = 'http://rubygems.org/gems/eltiempobcn'
+  s.homepage  = 'https://github.com/mejimenez/eltiempo'
   s.license   = 'MIT'
   s.files     = Dir.glob("{lib,bin}/**/*")
   s.require_path = 'lib'

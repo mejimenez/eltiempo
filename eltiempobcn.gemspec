@@ -14,5 +14,4 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'thor', '~> 0'
   s.add_runtime_dependency 'nokogiri'
   s.add_runtime_dependency 'i18n'
-  s.add_development_dependency 'byebug', '~> 0'
 end

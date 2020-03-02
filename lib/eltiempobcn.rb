@@ -2,7 +2,7 @@ require 'thor'
 require 'nokogiri'
 require 'open-uri'
 require 'i18n'
-require 'byebug'
+#require 'byebug'
 require_relative 'place.rb'
 
 class ElTiempoCLI < Thor

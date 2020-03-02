@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name      = 'eltiempobcn'
-  s.version   = '0.2.1'
+  s.version   = '0.2.2'
   s.platform  = Gem::Platform::RUBY
   s.summary   = 'ElTiempoBcn test gem'
   s.description = "It's a simple gem to get the ability to get the weather for different regions in Catalonia using CLI"

@@ -79,8 +79,9 @@ class String
       raise "ElTiempoBCN gem can't handle encoding yet. Please contact the author for more details" unless return_string =  I18n.transliterate( self ).tr( " ", "" ).downcase.to_sym
       return return_string
     rescue Encoding::CompatibilityError => e
+      raise unless return_string =  I18n.transliterate( self.force_encoding( Encoding::UTF_8 ) ).tr( " ", "" ).downcase.to_sym
       puts e
-      puts e.backtrace.inspect
+      puts e.backtrace.inspect      
     end
   end
 end

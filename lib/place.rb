@@ -75,6 +75,11 @@ end
 class String
   def to_sym_city
     I18n.config.available_locales = :en
-    return I18n.transliterate( self ).tr( " ", "" ).downcase.to_sym
+    begin
+      raise unless return_string =  I18n.transliterate( self ).tr( " ", "" ).downcase.to_sym
+      return return_string
+    rescue CompatibilityError => e
+      raise unless return_string =  I18n.transliterate( self.force_encoding( Encoding::UTF_8 ) ).tr( " ", "" ).downcase.to_sym
+    end
   end
 end

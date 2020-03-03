@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name      = 'eltiempobcn'
-  s.version   = '0.2.3'
+  s.version   = '0.2.4'
   s.platform  = Gem::Platform::RUBY
   s.summary   = 'eltiempo -today "Barcelona" will tell you the min and max for today'
   s.description = "It's a simple gem to get the weather for different regions in Catalonia using CLI. Improved for windows compat."

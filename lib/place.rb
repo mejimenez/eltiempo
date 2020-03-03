@@ -76,10 +76,11 @@ class String
   def to_sym_city
     I18n.config.available_locales = :en
     begin
-      raise unless return_string =  I18n.transliterate( self ).tr( " ", "" ).downcase.to_sym
+      raise "ElTiempoBCN gem can't handle encoding yet. Please contact the author for more details" unless return_string =  I18n.transliterate( self ).tr( " ", "" ).downcase.to_sym
       return return_string
-    rescue CompatibilityError => e
-      raise unless return_string =  I18n.transliterate( self.force_encoding( Encoding::UTF_8 ) ).tr( " ", "" ).downcase.to_sym
+    rescue Encoding::CompatibilityError => e
+      puts e
+      puts e.backtrace.inspect
     end
   end
 end

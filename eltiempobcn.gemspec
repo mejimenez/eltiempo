@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name      = 'eltiempobcn'
-  s.version   = '0.2.4'
+  s.version   = '0.2.5'
   s.platform  = Gem::Platform::RUBY
   s.summary   = 'eltiempo -today "Barcelona" will tell you the min and max for today'
-  s.description = "It's a simple gem to get the weather for different regions in Catalonia using CLI. Improved for windows compat."
+  s.description = "It's a simple gem to get the weather for different regions in Catalonia using CLI. Won't handle encodings."
   s.authors   = ['Marcelo Jimenez']
   s.email     = ['mejimenez@gmail.com']
   s.homepage  = 'https://github.com/mejimenez/eltiempo'

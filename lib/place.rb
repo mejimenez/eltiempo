@@ -79,9 +79,8 @@ class String
       return_string =  I18n.transliterate( self ).tr( " ", "" ).downcase.to_sym
       return return_string
     rescue Encoding::CompatibilityError => e
+      puts "An error of type #{e.class} occured. Message #{e.message}"
       raise unless return_string =  I18n.transliterate( self.encode( "UTF-8", "IBM437", invalid: :replace, undef: :replace ) ).tr( " ", "" ).downcase.to_sym
-      puts e
-      puts e.backtrace.inspect
     end
   end
 end

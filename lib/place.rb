@@ -61,11 +61,11 @@ class Place
   def Place.set_temperatures( place, places )
     place_data = Place.verify_and_get_temperatures( place.to_s, places )
 
-    place = Place.new( place,
+    place = ( Place.new( place,
       place_data[ :temperaturamaxima ][0],
       place_data[ :temperaturaminima ][0],
       ( place_data[ :temperaturamaxima ].sum / place_data[ :temperaturamaxima ].length ).round( 2 ),
-      ( place_data[ :temperaturaminima ].sum / place_data[ :temperaturaminima ].length ).round( 2 ) )
+      ( place_data[ :temperaturaminima ].sum / place_data[ :temperaturaminima ].length ).round( 2 ) ) rescue nil )
   end
 
 end
